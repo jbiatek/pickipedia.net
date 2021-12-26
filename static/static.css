@@ -2759,6 +2759,9 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }
 
 
+[data-tiddler-title="The Pickies Charter"] .tc-titlebar {
+padding-top: 20px;
+}
 [data-tiddler-title="The Pickies Charter"] .tc-title {
 font-family: "Zapfino", "Snell Roundhand", "Georgia", "Times New Roman", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 color: black;
