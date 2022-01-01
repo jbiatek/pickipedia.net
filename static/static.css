@@ -2759,6 +2759,13 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }
 
 
+[data-tiddler-title="2020 Annual Pickies*"],
+[data-tiddler-title="2020 Annual Pickies*"] .tc-title{
+background-color: black;
+color: white
+}
+
+
 [data-tiddler-title="The Pickies Charter"] .tc-titlebar {
 padding-top: 20px;
 }
@@ -2837,7 +2844,17 @@ linear-gradient(to bottom, transparent, transparent, transparent, transparent, t
     old-background-image: conic-gradient(transparent, transparent, transparent, transparent, transparent, transparent, aliceblue, aliceblue), linear-gradient(to bottom, lavenderblush, white, lavenderblush, white, lavenderblush, white, lavenderblush, white, lavenderblush, white, lavenderblush, white, lavenderblush);
     border-radius: 0px 0px 5px 0px;
 }
-.Federico, .Myke, .Stephen {
+.Jason {
+   background-color: aliceblue;
+}
+.John {
+    background-color: honeydew;
+}
+.James {
+    background-color: lavenderblush;
+}
+
+.Federico, .Myke, .Stephen .Jason .John .James {
     text-align: center;
 }
 

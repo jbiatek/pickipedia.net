@@ -171,6 +171,17 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div created="20220103205516160" game-round="3" host="John" modified="20220103232731140" pick="05.2" score="0" tags="Pick [[2020 WWDC Pickies]]" title="&quot;No new features&quot; for iOS and iPadOS, or at least an emphasis on stability over big new features" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220101040333427" modified="20220101052805475" tags="$:/Infrastructure $:/tags/Stylesheet" title="$:/2020AnnualStyle" type="text/css" revision="0" bag="default">
+<pre>[data-tiddler-title=&quot;2020 Annual Pickies*&quot;],
+[data-tiddler-title=&quot;2020 Annual Pickies*&quot;] .tc-title{
+background-color: black;
+color: white
+}
+</pre>
+</div>
 <div created="20210627153407855" modified="20211226175705904" tags="$:/Infrastructure $:/tags/Stylesheet" title="$:/CharterStyle" type="text/css" revision="0" bag="default">
 <pre>[data-tiddler-title=&quot;The Pickies Charter&quot;] .tc-titlebar {
 padding-top: 20px;
@@ -10501,7 +10512,7 @@ very-muted-foreground: #888888</pre>
 \end
 &lt;&lt;searchResults&gt;&gt;</pre>
 </div>
-<div created="20210527212654514" modified="20211223181326087" tags="$:/Infrastructure" title="$:/PickTableRowTemplate" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20210527212654514" modified="20211231225918772" tags="$:/Infrastructure" title="$:/PickTableRowTemplate" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;tr class=&quot;pickrow&quot;&gt;
 &lt;td class={{!!host}}&gt;{{!!host}}&lt;/td&gt;
 &lt;td class=&quot;pick&quot;&gt;&quot;&lt;$link/&gt;&quot;&lt;/td&gt;
@@ -10509,8 +10520,10 @@ very-muted-foreground: #888888</pre>
 &lt;$list filter=&quot;[is[current]!score[]]&quot;&gt;
 &lt;$reveal type=&quot;match&quot; state=&quot;!!score&quot; text=&quot;0.5&quot;&gt;&lt;td class=&quot;score halfcorrect&quot;&gt;&lt;strong&gt;{{!!score}}&lt;/strong&gt;&lt;/td&gt;&lt;/$reveal&gt;
 &lt;$reveal type=&quot;match&quot; state=&quot;!!score&quot; text=&quot;0.75&quot;&gt;&lt;td class=&quot;score halfcorrect&quot;&gt;&lt;strong&gt;{{!!score}}&lt;/strong&gt;&lt;/td&gt;&lt;/$reveal&gt;
+&lt;$reveal type=&quot;match&quot; state=&quot;!!score&quot; text=&quot;???&quot;&gt;&lt;td class=&quot;score halfcorrect&quot;&gt;&lt;strong&gt;{{!!score}}&lt;/strong&gt;&lt;/td&gt;&lt;/$reveal&gt;
 
-&lt;$reveal type=&quot;lteq&quot; state=&quot;!!score&quot; text=&quot;0&quot;&gt;&lt;td class=&quot;score incorrect&quot;&gt;&lt;strong&gt;{{!!score}}&lt;/strong&gt;&lt;/td&gt;&lt;/$reveal&gt;
+&lt;$reveal type=&quot;match&quot; state=&quot;!!score&quot; text=&quot;0&quot;&gt;&lt;td class=&quot;score incorrect&quot;&gt;&lt;strong&gt;{{!!score}}&lt;/strong&gt;&lt;/td&gt;&lt;/$reveal&gt;
+&lt;$reveal type=&quot;match&quot; state=&quot;!!score&quot; text=&quot;-1&quot;&gt;&lt;td class=&quot;score incorrect&quot;&gt;&lt;strong&gt;{{!!score}}&lt;/strong&gt;&lt;/td&gt;&lt;/$reveal&gt;
 &lt;$reveal type=&quot;gteq&quot; state=&quot;!!score&quot; text=&quot;1&quot;&gt;&lt;td class=&quot;score correct&quot;&gt;&lt;strong&gt;{{!!score}}&lt;/strong&gt;&lt;/td&gt;&lt;/$reveal&gt;
 &lt;/$list&gt;
 
@@ -10521,7 +10534,7 @@ very-muted-foreground: #888888</pre>
 &lt;/tr&gt;
 &lt;$list filter=&quot;[is[current]!text[]]&quot;&gt;&lt;tr&gt;&lt;td class=&quot;notes-spacer&quot;&gt;&lt;/td&gt;&lt;td colspan=&quot;1&quot; class=&quot;notes&quot;&gt;{{!!text}}&lt;/td&gt;&lt;/tr&gt;&lt;/$list&gt;</pre>
 </div>
-<div created="20210528064944192" modified="20211014201923797" tags="$:/tags/Stylesheet $:/Infrastructure" title="$:/PickTableStyling" type="text/plain" revision="0" bag="default">
+<div created="20210528064944192" modified="20211231171237612" tags="$:/tags/Stylesheet $:/Infrastructure" title="$:/PickTableStyling" type="text/plain" revision="0" bag="default">
 <pre>td ul {
     margin: 5px;
     padding-left: 0px;
@@ -10558,7 +10571,17 @@ linear-gradient(to bottom, transparent, transparent, transparent, transparent, t
     old-background-image: conic-gradient(transparent, transparent, transparent, transparent, transparent, transparent, aliceblue, aliceblue), linear-gradient(to bottom, lavenderblush, white, lavenderblush, white, lavenderblush, white, lavenderblush, white, lavenderblush, white, lavenderblush, white, lavenderblush);
     border-radius: 0px 0px 5px 0px;
 }
-.Federico, .Myke, .Stephen {
+.Jason {
+   background-color: aliceblue;
+}
+.John {
+    background-color: honeydew;
+}
+.James {
+    background-color: lavenderblush;
+}
+
+.Federico, .Myke, .Stephen .Jason .John .James {
     text-align: center;
 }
 
@@ -11894,12 +11917,79 @@ Contents&quot; &quot;$:/core/ui/SideBar/Open&quot;&gt;&gt;
 <div created="20210601065021380" modified="20210627054230757" title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>fluid-fixed</pre>
 </div>
+<div created="20220101040247178" creator="jbiatek" modified="20220101165838400" modifier="jbiatek" picked="20200101" tags="[[Annual Games]] Game" title="2020 Annual Pickies*" type="text/vnd.tiddlywiki" winner="Redacted" revision="0" bag="default">
+<pre>All information about the events of 2020 has been expunged from Pickipedia to discourage any imitation by other Apple prediction games.
+
+We can all agree that the competitiveness of The Pickies is one of the best parts about it. However, this did not make it acceptable in any way for a host to allegedly sabotage the Apple Car program by driving unpredictably around cars with cameras in the Bay Area. It was also well beyond the common rules of decency as well as trademark infringement for a host to, allegedly, release an &quot;Apple Podcasts&quot; app for Android to try to fulfill a 3 point pick on a technicality. And while applying for a job as head of PR at Apple is perfectly legal, even when done as aggressively and publicly as it was, everyone now agrees that it is not in the spirit of the game.
+
+Pickipedia roundly condemns behavior like this, but it is heartening to see that the hosts recognized that they had stepped out of bounds, and that they have implemented real reform in [[the Charter|The Pickies Charter]]. We can all hope that this is a one time black mark on the history of the game, and that future games can be played in fun.</pre>
+</div>
+<div created="20220101224557015" creator="jbiatek" modified="20220103234747922" modifier="jbiatek" picked="20200617" tags="Game [[WWDC Games]]" title="2020 WWDC Pickies" type="text/vnd.tiddlywiki" winner="James" revision="0" bag="default">
+<pre>Points are doubled for everything since WWDC is in the first half of the year.
+
+{{||$:/PickiesTemplate}}
+
+!! 🏆 Scores
+
+# James: 20 - (4/14 * 5) = 18.5714285714
+# Jason: 12 - (4/7 * 5) = 9.1428571429
+# John: 8 - (4/7 * 5) = 5.1428571429
+
+After James's 12 lightning round picks made both episodes //very// long, a cap of 5 picks was imposed.</pre>
+</div>
+<div created="20220101025609710" creator="jbiatek" modified="20220101035857970" modifier="jbiatek" picked="20210107" tags="[[Annual Games]] Game" title="2021 Annual Pickies" type="text/vnd.tiddlywiki" winner="James" revision="0" bag="default">
+<pre>{{||$:/PickiesTemplate}}
+
+!! 🏆 Scores
+
+# James: 4 - (5/7 * 5) = 0.4285714286
+# John: 4 - (6/7 * 5) = -0.2857142857
+# Jason: 3 - (5/7 * 5) = -0.5714285714</pre>
+</div>
+<div created="20220101025834017" game-round="1" host="Jason" modified="20220101030039484" pick="1.2" score="0" tags="Pick [[2021 Annual Pickies]]" title="2021 is the year that Apple Silicon travels to space" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>
+
+</pre>
+</div>
+<div created="20211230235302395" creator="jbiatek" modified="20220101043003677" modifier="jbiatek" picked="20210531" tags="Game [[WWDC Games]]" title="2021 WWDC Pickies" type="text/vnd.tiddlywiki" winner="Indeterminate" revision="0" bag="default">
+<pre>As always, points are doubled for everything since WWDC is in the first half of the year.
+
+{{||$:/PickiesTemplate}}
+
+!! 🏆 Scores
+
+During grading, there are some... issues. The three meta picks can't be scored until the end. The standings initially are:
+
+# Jason: 8 points
+# John: 6 points
+# James: 4 points
+
+James and John's picks are correct, as Jason and John have just 14 points between them, and James is in last place. However, the 6 additional points for James boosts him from last to first, making John's pick incorrect after all. All seems resolved until Jason remembers that with John now in last place, Jason's pick is correct, earning him 4 points and taking the lead. The live listeners then point out that Jason and John now have a combined 18 points, making James's pick wrong again. James drops back down to last again, which takes the 4 points back away from Jason and gives 2 to John. Now Jason and John's combined score is 16, just small enough to makes James's pick correct again.
+
+In retrospect, at that point the scoring process had wrapped back around to where it started, but it took a few loops to realize it. What followed was a confusing whirlwind of numbers and logical deduction.
+
+Eventually, the hosts and live listeners concluded that there actually //was no solution//: any decision about these remaining picks resulted in either a loop or a contradiction. Just as the statement &quot;this sentence is false&quot; is neither true nor false, each host has neither won nor lost this game. The result is decided as &quot;indeterminate&quot; and a new rule that picks must be both provably true or false and related to technology is added to prevent this in the future.</pre>
+</div>
 <div created="20211223180223427" creator="jbiatek" modified="20211224023212154" modifier="jbiatek" picked="20211222" tags="[[Annual Games]] Game" title="2022 Annual Pickies" type="text/vnd.tiddlywiki" winner="TBD" revision="0" bag="default">
 <pre>{{||$:/PickiesTemplate}}
 
 &lt;!--{{||ScoreTemplate}}--&gt;</pre>
 </div>
+<div created="20220101033959863" game-round="3" host="Jason" modified="20220101034310650" pick="6.2" score="1" tags="Pick [[2021 Annual Pickies]]" title="5G will not come to the Mac" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;ul&gt;&lt;li&gt;Indeed, no cellular at all.&lt;/li&gt;&lt;/ul&gt;</pre>
+</div>
 <div created="20211223182504287" game-round="2" host="James" modified="20211224021226499" pick="2" score="" tags="Pick [[2022 Annual Pickies]]" title="A developer kit will be introduced for Apple’s mixed reality headset at WWDC, but the headset itself will not actually ship to consumers during 2022" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220101025645293" game-round="1" host="James" modified="20220101025828801" pick="1.1" score="0" tags="Pick [[2021 Annual Pickies]]" title="A Mac gets a headgear accessory to enable AR/VR development" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>
+
+</pre>
+</div>
+<div created="20220103205349661" game-round="3" host="Jason" modified="20220103232407103" pick="03.1" score="0" tags="Pick [[2020 WWDC Pickies]]" title="A new iMac will be announced" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220101234829560" game-round="3" host="James" modified="20220103202401434" pick="13.3" score="2" tags="Pick [[2020 WWDC Pickies]]" title="A new way to share watch faces with others" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
 <div created="20210421020603617" creator="jbiatek" modified="20211224183506718" modifier="jbiatek" tags="Contents" title="About" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -11913,6 +12003,18 @@ As a single page wiki, the page URL doesn't change as items are opened. To link 
 
 &lt;p xmlns:cc=&quot;http://creativecommons.org/ns#&quot; xmlns:dct=&quot;http://purl.org/dc/terms/&quot;&gt;Pickipedia is licensed under &lt;a href=&quot;http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1&quot; target=&quot;_blank&quot; rel=&quot;license noopener noreferrer&quot; style=&quot;display:inline-block;&quot;&gt;CC BY-NC 4.0&lt;img style=&quot;height:22px!important;margin-left:3px;vertical-align:text-bottom;&quot; src=&quot;https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1&quot; alt=&quot;Creative Commons&quot;&gt;&lt;img style=&quot;height:22px!important;margin-left:3px;vertical-align:text-bottom;&quot; src=&quot;https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1&quot; alt=&quot;Attribution required&quot;&gt;&lt;img style=&quot;height:22px!important;margin-left:3px;vertical-align:text-bottom;&quot; src=&quot;https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1&quot; alt=&quot;Non-Commercial&quot;&gt;&lt;/a&gt;&lt;/p&gt;</pre>
 </div>
+<div created="20211231000014478" game-round="3" host="John" modified="20211231000032987" pick="3.1" score="???" tags="Pick [[2021 WWDC Pickies]]" title="Actually, it is James who will be in last place" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220101030932497" game-round="3" host="James" modified="20220101031103086" pick="3.1" score="0" tags="Pick [[2021 Annual Pickies]]" title="AirPods Max will be updated with a new case" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220101030734868" game-round="2" host="John" modified="20220101030911972" pick="2.3" score="4" tags="Pick [[2021 Annual Pickies]]" title="AirTags will finally come out this year" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;ul&gt;&lt;li&gt;They came in April for double points&lt;/li&gt;&lt;/ul&gt;</pre>
+</div>
+<div created="20220101034023513" game-round="3" host="Jason" modified="20220101034426376" pick="7.2" score="0" tags="Pick [[2021 Annual Pickies]]" title="An iPod Touch will play a role in a major news story" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
 <div color="#ff6251" created="20210530222730294" modified="20211012164947920" tags="Contents" title="Annual Games" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
 
@@ -11924,8 +12026,29 @@ As a single page wiki, the page URL doesn't change as items are opened. To link 
 <div created="20211223182531719" game-round="2" host="Jason" modified="20211224021226511" pick="3" score="" tags="Pick [[2022 Annual Pickies]]" title="Anyone who wants an Apple headset will be able to buy one by the end of 2022 without becoming a developer" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
+<div created="20220103201923561" game-round="3" host="James" modified="20220103202038889" pick="12.3" score="2" tags="Pick [[2020 WWDC Pickies]]" title="App slices for iOS" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;ul&gt;&lt;li&gt;This is an Android feature where just part of an app can be downloaded and run.&lt;/li&gt;&lt;/ul&gt;</pre>
+</div>
+<div created="20220103205438228" game-round="3" host="Jason" modified="20220103232636544" pick="05.1" score="0" tags="Pick [[2020 WWDC Pickies]]" title="Apple allows developers to better handle the Apple Watch's always-on display" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220101030201478" game-round="2" host="James" modified="20220101030318126" pick="2.1" score="0" tags="Pick [[2021 Annual Pickies]]" title="Apple announces a Mac Pro expansion card that adds an Apple Silicon chip" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220101231011614" game-round="1" host="Jason" modified="20220101231254337" pick="1.1" score="6" tags="Pick [[2020 WWDC Pickies]]" title="Apple announces a processor transition, but nothing about new consumer hardware" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
 <div created="20211223183129925" game-round="3" host="John" modified="20211224021226527" pick="4.1" score="" tags="Pick [[2022 Annual Pickies]]" title="Apple finally updates Safari Reading List" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
+</div>
+<div created="20220101233336386" game-round="1" host="John" modified="20220101233626653" pick="1.2" score="0" tags="Pick [[2020 WWDC Pickies]]" title="Apple is going to introduce a standalone display at WWDC 2020" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;ul&gt;&lt;li&gt;&quot;Costs less than a Pro Display XDR&quot;&lt;/li&gt;&lt;li&gt;John is very confident. Jason thinks this might be the year.&lt;/li&gt;&lt;/ul&gt;</pre>
+</div>
+<div created="20211230235636560" game-round="1" host="John" modified="20211230235738495" pick="1.1" score="0" tags="Pick [[2021 WWDC Pickies]]" title="Apple is going to introduce a standalone display at WWDC 2021" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;ul&gt;&lt;li&gt;&quot;Costs less than a Pro Display XDR&quot;&lt;/li&gt;&lt;li&gt;Yet again, John makes this his 3 point pick, but Jason thinks this might be the year.&lt;/li&gt;&lt;/ul&gt;</pre>
+</div>
+<div created="20220101030104011" game-round="1" host="John" modified="20220101030132771" pick="1.3" score="0" tags="Pick [[2021 Annual Pickies]]" title="Apple is going to introduce a standalone display in 2021" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;ul&gt;&lt;li&gt;&quot;Costs less than a Pro Display XDR&quot;&lt;/li&gt;&lt;li&gt;Yet again, John makes this his 3 point pick, but Jason thinks this might be the year.&lt;/li&gt;&lt;/ul&gt;</pre>
 </div>
 <div created="20211223180746225" game-round="1" host="John" modified="20211224021226540" pick="1.1" score="" tags="Pick [[2022 Annual Pickies]]" title="Apple is going to introduce a standalone display next year" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;ul&gt;&lt;li&gt;&quot;Costs less than a Pro Display XDR&quot;&lt;/li&gt;&lt;li&gt;Yet again, John makes this his 3 point pick, but Jason thinks this might be the year.&lt;/li&gt;&lt;/ul&gt;
@@ -11936,7 +12059,13 @@ As a single page wiki, the page URL doesn't change as items are opened. To link 
 <div created="20211223182857723" game-round="3" host="Jason" modified="20211224021226559" pick="2.3" score="" tags="Pick [[2022 Annual Pickies]]" title="Apple Notes is going to get on the notes cross-linking train in iOS 16" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
+<div created="20220103205432811" game-round="3" host="Jason" modified="20220103232530839" pick="04.1" score="0" tags="Pick [[2020 WWDC Pickies]]" title="Apple puts an emphasis on improvements to SwiftUI" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
 <div created="20211223183008807" game-round="3" host="James" modified="20211224021226573" pick="3.2" score="" tags="Pick [[2022 Annual Pickies]]" title="Apple will announce that Apple Arcade will have AR and VR titles at the consumer launch of the headset" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20211231005038120" game-round="2" host="James" modified="20211231223111244" pick="2.2" score="4" tags="Pick [[2021 WWDC Pickies]]" title="Apple will finally put out TestFlight for the Mac" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
 <div created="20211223183319924" game-round="3" host="John" modified="20211224021226589" pick="5.1" score="" tags="Pick [[2022 Annual Pickies]]" title="Apple will introduce a classical music focused app" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -11950,6 +12079,18 @@ As a single page wiki, the page URL doesn't change as items are opened. To link 
 </div>
 <div created="20211223183502475" game-round="3" host="Jason" modified="20211224021226615" pick="5.3" score="" tags="Pick [[2022 Annual Pickies]]" title="Apple will introduce a new service with a monthly fee option" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;ul&gt;&lt;li&gt;Jason thinks that, despite its vagueness, it is actually a tricky pick.&lt;/li&gt;&lt;/ul&gt;</pre>
+</div>
+<div created="20220101032131201" game-round="3" host="John" modified="20220101033226484" pick="3.3" score="0" tags="Pick [[2021 Annual Pickies]]" title="Apple will release a successor to the Pippin" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220101032611267" game-round="3" host="John" modified="20220101033235726" pick="5.3" score="0" tags="Pick [[2021 Annual Pickies]]" title="Apple will release an iPad Pro with a square aspect ratio" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220101031106565" game-round="3" host="James" modified="20220101031407322" pick="4.1" score="0" tags="Pick [[2021 Annual Pickies]]" title="Apple will turn Dark Sky into a framework for app developers to build weather apps" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220101031908949" game-round="3" host="James" modified="20220101032040285" pick="7.1" score="0" tags="Pick [[2021 Annual Pickies]]" title="Apple will update the iMac, but the stand will be sold separately" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
 </div>
 <div created="20211223182637839" game-round="3" host="James" modified="20211224021226630" pick="1.2" score="" tags="Pick [[2022 Annual Pickies]]" title="At least one Mac will be introduced in 2022 that is available in regular, Pro, and Max processor configurations at once" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;ul&gt;&lt;li&gt;Ungraded: Likely the iMac and maybe the Mac mini.&lt;/li&gt;&lt;/ul&gt;</pre>
@@ -11970,6 +12111,9 @@ As a single page wiki, the page URL doesn't change as items are opened. To link 
 &lt;/div&gt;
 </pre>
 </div>
+<div created="20220101033752431" game-round="3" host="Jason" modified="20220101033937928" pick="5.2" score="0" tags="Pick [[2021 Annual Pickies]]" title="Developers will get a way to develop AR/VR apps on 'normal' hardware" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;ul&gt;&lt;li&gt;Ungraded: something like Google Cardboard&lt;/li&gt;&lt;/ul&gt;</pre>
+</div>
 <div created="20211223182600370" game-round="3" host="John" modified="20211224021226653" pick="1.1" score="" tags="Pick [[2022 Annual Pickies]]" title="Eddie Cue is going to return to the next Apple keynote to talk about services, but he won’t dance (unfortunately)" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
@@ -11978,6 +12122,9 @@ As a single page wiki, the page URL doesn't change as items are opened. To link 
 </div>
 <div created="20211223183039841" game-round="3" host="Jason" modified="20211224021258055" pick="3.3" score="" tags="Pick [[2022 Annual Pickies]]" title="I will set foot on the Apple Park campus this year by invitation" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;ul&gt;&lt;li&gt;Cannot be induced by Jason by, say, applying for a job or asking for an invitation.&lt;/li&gt;&lt;li&gt;Another one of Jason’s picks about himself.&lt;/li&gt;&lt;/ul&gt;</pre>
+</div>
+<div created="20211231000456905" game-round="1" host="Jason" modified="20211231230153343" pick="1.3" score="6" tags="Pick [[2021 WWDC Pickies]]" title="I will win the 2021 WWDC Upgrade Draft" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;ul&gt;&lt;li&gt;Jason also decides to go a little meta, and once again makes a pick about himself. &lt;a href=&quot;https://upgrade.cards/card/apple062021&quot; target=&quot;_blank&quot;&gt;He was right, though.&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</pre>
 </div>
 <div created="20210627004918274" modified="20210627163443676" tags="" title="index" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;$set name=&quot;Defaults&quot; value={{{ [[$:/DefaultTiddlers]get[text]] }}}&gt;
@@ -11990,25 +12137,71 @@ As a single page wiki, the page URL doesn't change as items are opened. To link 
 &lt;/$list&gt;
 &lt;/$set&gt;</pre>
 </div>
+<div created="20220101032212935" game-round="3" host="John" modified="20220101033230927" pick="4.3" score="0" tags="Pick [[2021 Annual Pickies]]" title="iOS 15 will feature a customizable color palette, sort of a 'theme-lite' system" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220101233802389" game-round="3" host="James" modified="20220101235030278" pick="04.3" score="2" tags="Pick [[2020 WWDC Pickies]]" title="iOS will allow users to change the default web browser" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220101031647186" game-round="3" host="James" modified="20220101031958488" pick="6.1" score="2" tags="Pick [[2021 Annual Pickies]]" title="iPad multitasking changes in some way" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;ul&gt;&lt;li&gt;Again &lt;i&gt;not&lt;/i&gt; including a guess as to whether it will be better or not.&lt;/li&gt;&lt;li&gt;Came true at WWDC in June, so double points.&lt;/li&gt;&lt;/ul&gt;</pre>
+</div>
 <div created="20211223182156784" game-round="1" host="Jason" modified="20211224021226667" pick="3" score="" tags="Pick [[2022 Annual Pickies]]" title="iPadOS will finally get non-mirrored external display support" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;ul&gt;&lt;li&gt;Another repeat pick from Jason&lt;/li&gt;&lt;/ul&gt;</pre>
+</div>
+<div created="20211231171328754" game-round="3" host="Jason" modified="20211231221340049" pick="4.3" score="0" tags="Pick [[2021 WWDC Pickies]]" title="iPadOS will get non-mirrored external display support" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20211230235750844" game-round="1" host="James" modified="20211231173023402" pick="1.2" score="???" tags="Pick [[2021 WWDC Pickies]]" title="Jason and John will earn no more than 16 points this game" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;ul&gt;&lt;li&gt;James decides to go a new, more meta route with his first pick.&lt;/li&gt;&lt;/ul&gt;</pre>
+</div>
+<div created="20211230235913916" game-round="2" host="Jason" modified="20211230235924047" pick="2.3" score="???" tags="Pick [[2021 WWDC Pickies]]" title="John will come in last place" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20211231165057674" game-round="3" host="James" modified="20211231223731870" pick="4.2" score="0" tags="Pick [[2021 WWDC Pickies]]" title="macOS will skip all the way to version 2021 to match the year" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20211231004340267" game-round="2" host="John" modified="20211231004712643" pick="2.1" score="4" tags="Pick [[2021 WWDC Pickies]]" title="Mail.app gets a disappointing update" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;ul&gt;&lt;li&gt;There is some fear that this will be subjective, but since the update was basically just blocking tracking pixels, this is a clear win.&lt;/li&gt;&lt;/ul&gt;</pre>
+</div>
+<div created="20220101231518914" game-round="1" host="James" modified="20220101231620374" pick="1.3" score="0" tags="Pick [[2020 WWDC Pickies]]" title="Messages gets new notification features and the ability to 'unsend' a message" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220101032510951" game-round="3" host="John" modified="20220101033245053" pick="7.3" score="0" tags="Pick [[2021 Annual Pickies]]" title="Miniature widgets or complications will come to the iOS lock screen" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220103202449013" game-round="3" host="James" modified="20220103202505794" pick="14.3" score="0" tags="Pick [[2020 WWDC Pickies]]" title="New AirPods" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220103202341946" game-round="3" host="James" modified="20220103202353448" pick="10.3" score="0" tags="Pick [[2020 WWDC Pickies]]" title="New AR/VR features for iOS" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20211231165128135" game-round="3" host="Jason" modified="20211231223620611" pick="3.3" score="2" tags="Pick [[2021 WWDC Pickies]]" title="New features for FaceTime" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220101233119721" game-round="2" host="John" modified="20220101233143902" pick="2.2" score="4" tags="Pick [[2020 WWDC Pickies]]" title="New Memoji options are featured" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
 </div>
 <div created="20211223183419542" game-round="3" host="James" modified="20211224021226673" pick="5.2" score="" tags="Pick [[2022 Annual Pickies]]" title="No Apple executive will say the words 'metaverse', 'blockchain', or 'NFT' during any Apple event in 2022" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
-<div color="#ff6251" created="20210530222754497" modified="20211012165001737" tags="Contents" title="Other Games" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
-
-&lt;&lt;toc-selective-expandable 'Other Games' 'sort[picked]'&gt;&gt;
-
-&lt;/div&gt;
-</pre>
-</div>
 <div color="#00a3d7" created="20210530222823806" modified="20210906182351968" title="Pick" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220101233938022" game-round="3" host="James" modified="20220101235035512" pick="05.3" score="2" tags="Pick [[2020 WWDC Pickies]]" title="Picture-in-picture comes to the iPhone" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
 <div created="20210627155822160" modified="20211224171043219" tags="" title="Search Error" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>The static version of Pickipedia doesn't support search. Please enable JavaScript and go to the main page at https://pickipedia.net for search functionality.</pre>
+</div>
+<div created="20220101234542760" game-round="3" host="James" modified="20220101235057073" pick="09.3" score="2" tags="Pick [[2020 WWDC Pickies]]" title="Shortcuts finally gets folders" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220101233728790" game-round="3" host="James" modified="20220101235044536" pick="07.3" score="2" tags="Pick [[2020 WWDC Pickies]]" title="Sleep tracking for Apple Watch" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220103205521694" game-round="3" host="John" modified="20220103233252282" pick="06.2" score="0" tags="Pick [[2020 WWDC Pickies]]" title="Some sort of mental health feature for the Watch" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
 </div>
 <div created="20211223182918787" game-round="3" host="John" modified="20211224021226679" pick="3.1" score="" tags="Pick [[2022 Annual Pickies]]" title="The 13 inch MacBook Pro is going to be discontinued" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
@@ -12016,16 +12209,44 @@ As a single page wiki, the page URL doesn't change as items are opened. To link 
 <div created="20211223182838172" game-round="3" host="James" modified="20211224021226685" pick="2.2" score="" tags="Pick [[2022 Annual Pickies]]" title="The Apple Silicon Mac Pro will not support discrete graphics cards or any other form of PCI-e cards for expansion" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
+<div created="20220101031413164" game-round="3" host="James" modified="20220101031949671" pick="5.1" score="2" tags="Pick [[2021 Annual Pickies]]" title="The Apple TV remote is updated" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;ul&gt;&lt;li&gt;Specifically &lt;i&gt;not&lt;/i&gt; including a guess as to whether it will be better or not.&lt;/li&gt;&lt;li&gt;Came true in April, so double points.&lt;/li&gt;&lt;/ul&gt;</pre>
+</div>
 <div created="20211223183206258" game-round="3" host="James" modified="20211224021226691" pick="4.2" score="" tags="Pick [[2022 Annual Pickies]]" title="The AR/VR headset is going to have a sensor on it that can detect mouth shapes and other facial expressions" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220101032421291" game-round="3" host="John" modified="20220101033240844" pick="6.3" score="0" tags="Pick [[2021 Annual Pickies]]" title="The headphone jack will come back, but only to the Max phones" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20211231164911189" game-round="3" host="John" modified="20211231223410551" pick="4.1" score="2" tags="Pick [[2021 WWDC Pickies]]" title="The Home app will get updated, but only the watch version" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;ul&gt;&lt;li&gt;A very specific pick that pays off&lt;/li&gt;&lt;/ul&gt;</pre>
+</div>
+<div created="20220101231343496" game-round="3" host="John" modified="20220101235019177" pick="03.2" score="2" tags="Pick [[2020 WWDC Pickies]]" title="The iPad finally gets widgets on the home screen like the iPhone has" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220103205506992" game-round="3" host="John" modified="20220103232452729" pick="04.2" score="0" tags="Pick [[2020 WWDC Pickies]]" title="The iPad gets external display support" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220101030338746" game-round="2" host="Jason" modified="20220101030709650" pick="2.2" score="2" tags="Pick [[2021 Annual Pickies]]" title="The iPad mini will be updated with a flat-sided design" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220101234920576" game-round="3" host="James" modified="20220101234945629" pick="11.3" score="2" tags="Pick [[2020 WWDC Pickies]]" title="The iPhone gets an 'app drawer' separate from the traditional home screen" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220101033544596" game-round="3" host="Jason" modified="20220101033738299" pick="4.2" score="0" tags="Pick [[2021 Annual Pickies]]" title="The iPhone naming scheme will change this year" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;ul&gt;&lt;li&gt;&quot;Expected names are 12S or 13, with some combination of Mini, Pro, and Max modifiers&quot;&lt;/li&gt;&lt;/ul&gt;</pre>
+</div>
+<div created="20220101032924929" game-round="3" host="Jason" modified="20220101033254131" pick="3.2" score="0" tags="Pick [[2021 Annual Pickies]]" title="The Mac Pro will stop being sold in anticipation of an Apple Silicon version, to come out in 2022 or later" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;ul&gt;&lt;li&gt;This happened to the &lt;i&gt;iMac Pro&lt;/i&gt;, but not the Mac Pro.&lt;/li&gt;&lt;/ul&gt;</pre>
+</div>
+<div created="20220101232955109" game-round="2" host="Jason" modified="20220101233043726" pick="2.1" score="4" tags="Pick [[2020 WWDC Pickies]]" title="The Messages app is overhauled with a Catalyst version" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
 <div created="20211223182803324" game-round="3" host="John" modified="20211224021226696" pick="2.1" score="" tags="Pick [[2022 Annual Pickies]]" title="The Notes app is going to gain smart folders based on both tags and other metadata" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
-<div color="#fff995" created="20210416055238692" creator="jbiatek" modified="20211224174637975" modifier="jbiatek" tags="Contents" title="The Pickies Charter" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>
-
-&lt;div class=&quot;fancy-body&quot;&gt;
+<div color="#fff995" created="20210416055238692" creator="jbiatek" modified="20220103235748685" modifier="jbiatek" tags="Contents" title="The Pickies Charter" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;div class=&quot;fancy-body&quot;&gt;
 
 # There are two types of Pickies: Annual Pickies and WWDC Pickies. No other Pickies shall ever be introduced.
 # The winner of the Annual Pickies is named Grand Admiral Pickerton, and retains the title for the full year.
@@ -12059,18 +12280,37 @@ While not currently codified in the Charter, there is an additional rule for the
 
 !! Changes
 
-* #377 &lt;ul&gt;&lt;li&gt;Clarified that the wrong answer percentage deduction rule means percentage //as a fraction//, not as a percentage. For example, 1 out of four means deducting by (0.25) * 5, not 25 * 5.&lt;/li&gt;&lt;li&gt;Finally corrected the triple negative in the &quot;tech industry relevance&quot; rule.&lt;/li&gt;&lt;li&gt;James expressed some concern that the refrigerator magnets may not stick to all fridges, but Jason points out that the rule doesn't specify the method of adhesion, just the locations of the magnets.&lt;/li&gt;&lt;/ul&gt;
-* James once made 12 picks in the lightning round, which worked but made the show too long, so a limit of 5 was placed on it.
-
-&lt;ul&gt;
-&lt;$list filter=&quot;[tag&lt;currentTiddler&gt;]&quot;&gt;&lt;li&gt;&lt;$link/&gt;&lt;/li&gt;&lt;/$list&gt;
-&lt;/ul&gt;</pre>
+* #275: After a long series of drafts with unsettlingly increasing frequency, including the &quot;Apple Executive Draft&quot;, the &quot;Macintosh Performa Draft&quot;, the &quot;First Party Mouse Draft&quot;, and the &quot;Power Cable Draft&quot;, the draft mania hits a peak with a &quot;Connected Draft Draft&quot; which occurs //during// the &quot;PowerPC Processor Draft&quot;. A line has to be drawn, and one-off drafts are banned. To replace them, a strictly limited Apple predictions draft is started instead, for WWDC and for the full calendar year. A three point round, a two point round, and as many 1 point predictions as desired. In addition, points are doubled in the first half of the year. The previous winner gets the best drafting spot. Ties will be resolved by coin toss by Jason, who is objectively the best in the group at tossing a coin.
+* #278: After a few weeks of thought, James comes up with a clever solution that he calculates will always break a tie: subtract five times the percentage incorrect from each score. Jason objects to the loss of his sweet coin flipping gig, so instead a coin flip will be used to decide who drafts first. 
+* #299: Upon reading the rules before the [[2020 WWDC Pickies]], it is discovered that the rule about the previous winner getting the best draft position was never removed after the last rule change. However, John successfully argues that there actually is no contradiction: the best draft position is actually the second one, since you get a peek at your opponent without going last. As such, the coin flip to decide who goes first is fine. The rules are clarified to reflect this impeccable logic.
+* #300: After [[James makes 12 Lightning Round picks in one game|2020 WWDC Pickies]], a cap of 5 is put on the Lightning Round to keep the episodes a reasonable length.
+* #327: The full extent of [[what happened in 2020|2020 Annual Pickies*]] may never be known publicly, but what we do know is disturbing enough as it is. Thankfully, new rules were put in place to, hopefully, prevent events like this again: &lt;ul&gt;&lt;li&gt;The prediction document is not to be altered after the show is over.&lt;/li&gt;&lt;li&gt;Hosts cannot make a pick come true by taking action or inducing others.&lt;/li&gt;&lt;/ul&gt;
+* #349: After [[a game ends with a logically indeterminate outcome|2021 WWDC Pickies]], picks must be provably true or false to earn points, and must be just about Apple or the tech industry.
+* #377: &lt;ul&gt;&lt;li&gt;Clarified that the wrong answer percentage deduction rule means percentage //as a fraction//, not as a percentage. For example, 1 out of four means deducting by (0.25) * 5, not 25 * 5.&lt;/li&gt;&lt;li&gt;Finally corrected the triple negative in the &quot;tech industry relevance&quot; rule.&lt;/li&gt;&lt;li&gt;James expressed some concern that the refrigerator magnets may not stick to all fridges, but Jason points out that the rule doesn't specify the method of adhesion, just the locations of the magnets.&lt;/li&gt;&lt;/ul&gt;</pre>
+</div>
+<div created="20220103205527711" game-round="3" host="John" modified="20220103232942670" pick="07.2" score="2" tags="Pick [[2020 WWDC Pickies]]" title="There will be a developer transition kit, and it will be roughly a Mac mini" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220101234446325" game-round="3" host="James" modified="20220101235050718" pick="08.3" score="2" tags="Pick [[2020 WWDC Pickies]]" title="There will be a developer transition kit, similar to the Intel transition" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220101234000438" game-round="3" host="James" modified="20220101235039585" pick="06.3" score="2" tags="Pick [[2020 WWDC Pickies]]" title="There will be a new feature relevant to the pandemic" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;ul&gt;&lt;li&gt;The hand washing timer of Apple Watch is counted for this pick.&lt;/li&gt;&lt;/ul&gt;</pre>
+</div>
+<div created="20220103205447444" game-round="3" host="Jason" modified="20220103232907898" pick="07.1" score="0" tags="Pick [[2020 WWDC Pickies]]" title="There will not be any developer transition kit this time" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220103205442579" game-round="3" host="Jason" modified="20220103233321433" pick="06.1" score="2" tags="Pick [[2020 WWDC Pickies]]" title="Tim Cook will appear on a stage" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20211231165040921" game-round="3" host="James" modified="20211231221608110" pick="3.2" score="0" tags="Pick [[2021 WWDC Pickies]]" title="Tim Cook will not say the word &quot;Apple&quot;" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;ul&gt;&lt;li&gt;This seemed ill-advised at the time, but... no, it was very ill-advised.&lt;/li&gt;&lt;/ul&gt;</pre>
 </div>
 <div created="20211223182740504" game-round="3" host="Jason" modified="20211224021226701" pick="1.3" score="" tags="Pick [[2022 Annual Pickies]]" title="Universal Control ships before WWDC" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
-<div created="20210420213953579" creator="jbiatek" modified="20211225062652411" modifier="jbiatek" tags="Contents" title="Welcome" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>This is Pickipedia, a soon-to-be-complete repository of information about the completely original Apple prediction game played on &lt;a href=&quot;https://relay.fm/connected/&quot; target=&quot;_blank&quot;&gt;Connected&lt;/a&gt; by hosts Jason Snell, James Thomson, and John Voorhees, collectively, The Triple J.
+<div created="20210420213953579" creator="jbiatek" modified="20220104001053425" modifier="jbiatek" tags="Contents" title="Welcome" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>This is Pickipedia, a more than complete repository of information about the completely original Apple prediction game played on &lt;a href=&quot;https://relay.fm/connected/&quot; target=&quot;_blank&quot;&gt;Connected&lt;/a&gt; by hosts Jason Snell, James Thomson, and John Voorhees—collectively, The Triple J.
 
 
 &lt;&lt;&lt;.tc-big-quote
@@ -12082,7 +12322,13 @@ While not currently codified in the Charter, there is an additional rule for the
 
 !! ✨ What's new
 
-Still working through the backlog, but [[the most recent Pickies|2022 Annual Pickies]] has been recorded as well as [[The Pickies Charter]], with more on the way!
+All the games have finally been recorded! I recommend starting with [[The Pickies Charter]], complete with changelog. It's a great way to see the evolution of the game over the years. 
+
+The [[2022 Annual Pickies]] are underway, and you can mark your own guesses on the simple interactive scorecard. Also check out the [[2021 Annual Pickies]] results.
+
+! Contents
+
+{{Contents}}
 
 &lt;!--
 !! 🏃 Active games
@@ -12099,6 +12345,9 @@ Still working through the backlog, but [[the most recent Pickies|2022 Annual Pic
 [[Open the full Table of Contents|Contents]]
 --&gt;</pre>
 </div>
+<div created="20220101234251922" game-round="3" host="James" modified="20220101235025604" pick="03.3" score="2" tags="Pick [[2020 WWDC Pickies]]" title="Widgets come to macOS" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;ul&gt;&lt;li&gt;James initially wanted to pick the iPad, but John got to go first.&lt;/li&gt;&lt;/ul&gt;</pre>
+</div>
 <div color="#ff6251" created="20210530222744787" modified="20211224001550037" tags="Contents" title="WWDC Games" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
 
@@ -12106,6 +12355,9 @@ Still working through the backlog, but [[the most recent Pickies|2022 Annual Pic
 
 &lt;/div&gt;
 </pre>
+</div>
+<div created="20220101233155768" game-round="2" host="James" modified="20220101233212286" pick="2.3" score="0" tags="Pick [[2020 WWDC Pickies]]" title="Xcode comes to the iPad" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
 </div>
 
 
