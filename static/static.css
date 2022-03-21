@@ -2938,13 +2938,13 @@ linear-gradient(to bottom, transparent, transparent, transparent, transparent, t
 .score {
     border-radius: 0px 0px 0px 5px;
 }
-.correct {
+.correct, .correct input {
     background-color: lightgreen;
 }
-.incorrect {
+.incorrect, .incorrect input {
     background-color: lightpink;
 }
-.halfcorrect {
+.halfcorrect, .halfcorrect input {
     background-color: lemonchiffon;
 }
 .ungraded button {
@@ -2973,6 +2973,11 @@ display: none;
 }
 .picktable td.Myke, .picktable td.Stephen, .picktable td.Federico, .picktable td.picktype, .picktable td.pick, .picktable td.score {
     border-top: 1px solid #dddddd;
+}
+
+.scorecard-input {
+    width: 50px;
+    text-align: center;
 }
 
 [data-tiddler-title="$:/Search"] input[type="search"] {
