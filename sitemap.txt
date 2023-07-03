@@ -2,7 +2,7 @@ https://pickipedia.net/index.html
 https://pickipedia.net/static/%2522No%2520new%2520features%2522%2520for%2520iOS%2520and%2520iPadOS%252C%2520or%2520at%2520least%2520an%2520emphasis%2520on%2520stability%2520over%2520big%2520new%2520features.html
 https://pickipedia.net/static/%252FUsers%252Fjbiatek%252Ftiddlywiki%252Fpickies%252Ftiddlers%252F%2524__StoryList.tid.html
 https://pickipedia.net/static/%252FUsers%252Fjbiatek%252Ftiddlywiki%252Fpickies%252Ftiddlers%252F%2524__StoryList_1.tid.html
-https://pickipedia.net/static/2020%2520Annual%2520Pickies*.html
+https://pickipedia.net/static/2020%2520Annual%2520Pickies%252A.html
 https://pickipedia.net/static/2020%2520WWDC%2520Pickies.html
 https://pickipedia.net/static/2021%2520Annual%2520Pickies.html
 https://pickipedia.net/static/2021%2520WWDC%2520Pickies.html
@@ -30,7 +30,7 @@ https://pickipedia.net/static/App%2520slices%2520for%2520iOS.html
 https://pickipedia.net/static/Apple%2520Arcade%2520will%2520add%2520online%2520multiplayer%2520support%2520for%2520its%2520games.html
 https://pickipedia.net/static/Apple%2520Notes%2520is%2520going%2520to%2520get%2520on%2520the%2520notes%2520cross-linking%2520train%2520in%2520iOS%252016.html
 https://pickipedia.net/static/Apple%2520Silicon%2520Mac%2520Pro%2520introduction.html
-https://pickipedia.net/static/Apple%2520allows%2520developers%2520to%2520better%2520handle%2520the%2520Apple%2520Watch's%2520always-on%2520display.html
+https://pickipedia.net/static/Apple%2520allows%2520developers%2520to%2520better%2520handle%2520the%2520Apple%2520Watch%2527s%2520always-on%2520display.html
 https://pickipedia.net/static/Apple%2520announces%2520VR-specific%2520APIs.html
 https://pickipedia.net/static/Apple%2520announces%2520a%2520Mac%2520Pro%2520expansion%2520card%2520that%2520adds%2520an%2520Apple%2520Silicon%2520chip.html
 https://pickipedia.net/static/Apple%2520announces%2520a%2520processor%2520transition%252C%2520but%2520nothing%2520about%2520new%2520consumer%2520hardware.html
@@ -66,8 +66,8 @@ https://pickipedia.net/static/At%2520least%2520one%2520Mac%2520will%2520be%2520i
 https://pickipedia.net/static/At%2520some%2520point%2520in%25202022%252C%2520there%2520will%2520be%2520a%2520video%2520made%2520for%2520an%2520Apple%2520event%2520of%2520some%2520kind%2520featuring%2520Ted%2520Lasso.html
 https://pickipedia.net/static/Contents.html
 https://pickipedia.net/static/Desktop%2520widgets%2520for%2520the%2520Mac.html
-https://pickipedia.net/static/Developers%2520will%2520get%2520a%2520way%2520to%2520develop%2520AR%252FVR%2520apps%2520on%2520'normal'%2520hardware.html
-https://pickipedia.net/static/Eddie%2520Cue%2520is%2520going%2520to%2520return%2520to%2520the%2520next%2520Apple%2520keynote%2520to%2520talk%2520about%2520services%252C%2520but%2520he%2520won%25E2%2580%2599t%2520dance%2520(unfortunately).html
+https://pickipedia.net/static/Developers%2520will%2520get%2520a%2520way%2520to%2520develop%2520AR%252FVR%2520apps%2520on%2520%2527normal%2527%2520hardware.html
+https://pickipedia.net/static/Eddie%2520Cue%2520is%2520going%2520to%2520return%2520to%2520the%2520next%2520Apple%2520keynote%2520to%2520talk%2520about%2520services%252C%2520but%2520he%2520won%25E2%2580%2599t%2520dance%2520%2528unfortunately%2529.html
 https://pickipedia.net/static/Game.html
 https://pickipedia.net/static/I%2520will%2520set%2520foot%2520on%2520the%2520Apple%2520Park%2520campus%2520this%2520year%2520by%2520invitation.html
 https://pickipedia.net/static/I%2520will%2520win%2520the%25202021%2520WWDC%2520Upgrade%2520Draft.html
@@ -75,14 +75,14 @@ https://pickipedia.net/static/Jason%2520and%2520John%2520will%2520earn%2520no%25
 https://pickipedia.net/static/John%2520will%2520come%2520in%2520last%2520place.html
 https://pickipedia.net/static/M2%2520MacBook%2520Air.html
 https://pickipedia.net/static/Mail.app%2520gets%2520a%2520disappointing%2520update.html
-https://pickipedia.net/static/Messages%2520gets%2520new%2520notification%2520features%2520and%2520the%2520ability%2520to%2520'unsend'%2520a%2520message.html
+https://pickipedia.net/static/Messages%2520gets%2520new%2520notification%2520features%2520and%2520the%2520ability%2520to%2520%2527unsend%2527%2520a%2520message.html
 https://pickipedia.net/static/Miniature%2520widgets%2520or%2520complications%2520will%2520come%2520to%2520the%2520iOS%2520lock%2520screen.html
 https://pickipedia.net/static/New%2520AR%252FVR%2520features%2520for%2520iOS.html
 https://pickipedia.net/static/New%2520AirPods.html
 https://pickipedia.net/static/New%2520Apple%2520Watch%2520faces.html
 https://pickipedia.net/static/New%2520Memoji%2520options%2520are%2520featured.html
 https://pickipedia.net/static/New%2520features%2520for%2520FaceTime.html
-https://pickipedia.net/static/No%2520Apple%2520executive%2520will%2520say%2520the%2520words%2520'metaverse'%252C%2520'blockchain'%252C%2520or%2520'NFT'%2520during%2520any%2520Apple%2520event%2520in%25202022.html
+https://pickipedia.net/static/No%2520Apple%2520executive%2520will%2520say%2520the%2520words%2520%2527metaverse%2527%252C%2520%2527blockchain%2527%252C%2520or%2520%2527NFT%2527%2520during%2520any%2520Apple%2520event%2520in%25202022.html
 https://pickipedia.net/static/No%2520new%2520product%2520from%2520Apple%2520will%2520ship%2520with%2520a%2520Lightning%2520connector.html
 https://pickipedia.net/static/Notes%2520adds%2520linking%2520between%2520notes.html
 https://pickipedia.net/static/One%2520or%2520more%2520Relay%2520FM%2520hosts%2520are%2520seen%2520on%2520the%2520livestream.html
@@ -105,7 +105,7 @@ https://pickipedia.net/static/The%2520Mac%2520Pro%2520will%2520stop%2520being%25
 https://pickipedia.net/static/The%2520Mac%2520mini%2520will%2520get%2520an%2520update.html
 https://pickipedia.net/static/The%2520Messages%2520app%2520is%2520overhauled%2520with%2520a%2520Catalyst%2520version.html
 https://pickipedia.net/static/The%2520Notes%2520app%2520is%2520going%2520to%2520gain%2520smart%2520folders%2520based%2520on%2520both%2520tags%2520and%2520other%2520metadata.html
-https://pickipedia.net/static/The%2520Pickies%2520Charter%2520(2021).html
+https://pickipedia.net/static/The%2520Pickies%2520Charter%2520%25282021%2529.html
 https://pickipedia.net/static/The%2520Pickies%2520Charter.html
 https://pickipedia.net/static/The%2520headphone%2520jack%2520will%2520come%2520back%252C%2520but%2520only%2520to%2520the%2520Max%2520phones.html
 https://pickipedia.net/static/The%2520iOS%2520or%2520iPadOS%2520share%2520sheet%2520gets%2520a%2520functional%2520or%2520design%2520makeover.html
@@ -113,7 +113,7 @@ https://pickipedia.net/static/The%2520iPad%2520finally%2520gets%2520widgets%2520
 https://pickipedia.net/static/The%2520iPad%2520gets%2520extended%2520external%2520display%2520support.html
 https://pickipedia.net/static/The%2520iPad%2520gets%2520external%2520display%2520support.html
 https://pickipedia.net/static/The%2520iPad%2520mini%2520will%2520be%2520updated%2520with%2520a%2520flat-sided%2520design.html
-https://pickipedia.net/static/The%2520iPhone%2520gets%2520an%2520'app%2520drawer'%2520separate%2520from%2520the%2520traditional%2520home%2520screen.html
+https://pickipedia.net/static/The%2520iPhone%2520gets%2520an%2520%2527app%2520drawer%2527%2520separate%2520from%2520the%2520traditional%2520home%2520screen.html
 https://pickipedia.net/static/The%2520iPhone%2520naming%2520scheme%2520will%2520change%2520this%2520year.html
 https://pickipedia.net/static/There%2520is%2520an%2520Apple%2520TV%252B%2520show%2520skit.html
 https://pickipedia.net/static/There%2520will%2520be%2520a%2520bigger%2520MacBook%2520Air.html
@@ -130,7 +130,7 @@ https://pickipedia.net/static/WWDC%2520Games.html
 https://pickipedia.net/static/Welcome.html
 https://pickipedia.net/static/Widgets%2520come%2520to%2520macOS.html
 https://pickipedia.net/static/Xcode%2520comes%2520to%2520the%2520iPad.html
-https://pickipedia.net/static/iOS%252015%2520will%2520feature%2520a%2520customizable%2520color%2520palette%252C%2520sort%2520of%2520a%2520'theme-lite'%2520system.html
+https://pickipedia.net/static/iOS%252015%2520will%2520feature%2520a%2520customizable%2520color%2520palette%252C%2520sort%2520of%2520a%2520%2527theme-lite%2527%2520system.html
 https://pickipedia.net/static/iOS%2520will%2520allow%2520users%2520to%2520change%2520the%2520default%2520web%2520browser.html
 https://pickipedia.net/static/iPad%2520multitasking%2520changes%2520in%2520some%2520way.html
 https://pickipedia.net/static/iPadOS%2520will%2520finally%2520get%2520non-mirrored%2520external%2520display%2520support.html
